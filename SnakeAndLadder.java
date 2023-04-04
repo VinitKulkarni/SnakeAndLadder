@@ -22,6 +22,9 @@ public class SnakeAndLadder {
                 case 1:
                     //ladder
                     playerPosition = playerPosition + diceValue;
+                    if(playerPosition > WIN_POSITION){
+                        playerPosition = playerPosition - diceValue;
+                    }
                     System.out.println(playerPosition);
                     break;
                 case 2:
